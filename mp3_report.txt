@@ -1,0 +1,18 @@
+MP3
+
+
+#1.)
+To compile: `gcc mcopyfile.c`
+To run:     `./a.out <numThreads>`
+
+An integer must be passed as a command line argument indicating how many threads should be used to the task. My results showed that the timing was directly proportional to the number of threads being used; twice as many threads took twice as much time. While solving this problem, I came across the issue of maintaining file paths vs file descriptors (ints). The latter turned out to be much easier, but was an issue when I wanted the name of the file for debugging purposes. 
+
+#2.)
+- use existing mutex and counting variable in POSIX
+- but, make your own general semaphore and bounded buffer
+
+LIMIT SIZE THAT GETS COPIED (in runPipe)
+
+beej's guide (for network programming or any other guide)
+
+
